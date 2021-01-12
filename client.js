@@ -11,8 +11,7 @@ const connect = function() {
   conn.on('data', (data)=>{
     console.log('server says: ', data);
    });
-   
-  conn.on('connect', () => {console.log('Successfully connected to game server.');});
+
   conn.on('data', () => console.log('you ded cuz you idled'));
   return conn;
 }
